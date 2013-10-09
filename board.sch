@@ -7730,89 +7730,6 @@ at 08/10/2012 14:57:29</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="molex-kk">
-<packages>
-<package name="KK-H-3">
-<description>&lt;h3&gt;Molex KK connector, male, 3-pin, horizontal&lt;/h3&gt;
-
-&lt;p&gt;Part #22-05-XXXX (tin) and 22-12-XXXX (gold)&lt;/p&gt;</description>
-<wire x1="-1.27" y1="3.81" x2="6.35" y2="3.81" width="0.127" layer="21"/>
-<wire x1="6.35" y1="3.81" x2="6.35" y2="2.54" width="0.127" layer="21"/>
-<wire x1="6.35" y1="2.54" x2="11.43" y2="2.54" width="0.127" layer="21"/>
-<wire x1="11.43" y1="2.54" x2="11.43" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="11.43" y1="-2.54" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-2.54" x2="6.35" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-3.81" x2="-1.27" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="3.81" width="0.127" layer="21"/>
-<pad name="2" x="0" y="0" drill="1.1684"/>
-<pad name="1" x="0" y="2.54" drill="1.1684" shape="square"/>
-<pad name="3" x="0" y="-2.54" drill="1.1684"/>
-<text x="5.08" y="-0.635" size="1.27" layer="21">&gt;NAME</text>
-<rectangle x1="3.175" y1="-3.81" x2="4.7625" y2="3.81" layer="21"/>
-</package>
-<package name="KK-V-3">
-<description>&lt;h3&gt;Molex KK connector, male, 3-pin, vertical&lt;/h3&gt;
-
-&lt;p&gt;Part #22-05-XXXX (tin) and 22-12-XXXX (gold)&lt;/p&gt;</description>
-<wire x1="-3.175" y1="3.81" x2="3.175" y2="3.81" width="0.127" layer="21"/>
-<wire x1="3.175" y1="3.81" x2="3.175" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="3.175" y1="-3.81" x2="-3.175" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="-3.81" x2="-3.175" y2="3.81" width="0.127" layer="21"/>
-<pad name="2" x="0" y="0" drill="1.1684"/>
-<pad name="1" x="0" y="2.54" drill="1.1684" shape="square"/>
-<pad name="3" x="0" y="-2.54" drill="1.1684"/>
-<text x="-1.27" y="-0.9525" size="1.27" layer="21" rot="R90">&gt;NAME</text>
-<rectangle x1="1.5875" y1="-2.8575" x2="3.175" y2="2.8575" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="3WAY">
-<wire x1="-3.175" y1="4.445" x2="1.905" y2="4.445" width="0.254" layer="94"/>
-<wire x1="1.905" y1="4.445" x2="1.905" y2="-4.445" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-4.445" x2="-3.175" y2="-4.445" width="0.254" layer="94"/>
-<wire x1="-3.175" y1="-4.445" x2="-3.175" y2="4.445" width="0.254" layer="94"/>
-<circle x="-0.635" y="2.54" radius="0.635" width="0.254" layer="94"/>
-<circle x="-0.635" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="-0.635" y="-2.54" radius="0.635" width="0.254" layer="94"/>
-<text x="-3.81" y="-1.27" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<pin name="1" x="5.08" y="2.54" visible="pad" length="middle" rot="R180"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="middle" rot="R180"/>
-<pin name="3" x="5.08" y="-2.54" visible="pad" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="KK3*">
-<description>&lt;h3&gt;Molex KK&lt;/h3&gt;
-
-&lt;p&gt;3-pin connector, 100 mil pin spacing&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="3WAY" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="H" package="KK-H-3">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="V" package="KK-V-3">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="texas">
 <description>&lt;b&gt;Texas Instruments Devices&lt;/b&gt;&lt;p&gt;
  &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -8556,7 +8473,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="VDD1" library="supply1" deviceset="VDD" device="" value="+2.5V"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="GNDI1" library="supply1" deviceset="GNDI" device=""/>
 <part name="IC2" library="linear" deviceset="MC79M" device="" technology="05CDTG" value="MC79M05CDTG"/>
 <part name="IC3" library="linear" deviceset="MC78M" device="" technology="05CDTG"/>
 <part name="GND1" library="supply1" deviceset="0V" device=""/>
@@ -8600,8 +8516,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <part name="C38" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="SH2" library="shorts" deviceset="SHORT-H" device="B5"/>
 <part name="GNDI5" library="supply1" deviceset="GNDI" device=""/>
-<part name="GND5" library="supply1" deviceset="0V" device=""/>
-<part name="U$2" library="molex-kk" deviceset="KK3*" device="V"/>
 <part name="GND6" library="supply1" deviceset="0V" device=""/>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY31" library="supply2" deviceset="GND" device=""/>
@@ -8616,8 +8530,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <part name="C64" library="rcl" deviceset="C-US" device="C0603" value="4.7uF"/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
 <part name="P-11" library="supply1" deviceset="-5V" device=""/>
-<part name="P+6" library="supply1" deviceset="+15V" device=""/>
-<part name="P-10" library="supply1" deviceset="-15V" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY32" library="supply2" deviceset="-12V" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="+12V" device=""/>
@@ -8768,8 +8680,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <instance part="SUPPLY12" gate="G$1" x="114.3" y="-83.82" rot="R90"/>
 <instance part="SH2" gate="G$1" x="7.62" y="73.66" rot="R270"/>
 <instance part="GNDI5" gate="G$1" x="7.62" y="86.36" rot="R180"/>
-<instance part="GND5" gate="1" x="-5.08" y="81.28" rot="R90"/>
-<instance part="U$2" gate="G$1" x="-22.86" y="81.28"/>
 <instance part="GND6" gate="1" x="7.62" y="66.04"/>
 <instance part="SUPPLY30" gate="GND" x="12.7" y="38.1"/>
 <instance part="SUPPLY31" gate="GND" x="15.24" y="76.2" rot="R90"/>
@@ -8787,8 +8697,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <instance part="C64" gate="G$1" x="20.32" y="-17.78" rot="R180"/>
 <instance part="P+12" gate="1" x="162.56" y="60.96"/>
 <instance part="P-11" gate="1" x="162.56" y="20.32"/>
-<instance part="P+6" gate="1" x="-12.7" y="83.82" rot="R270"/>
-<instance part="P-10" gate="1" x="-12.7" y="78.74" rot="R90"/>
 <instance part="GND2" gate="1" x="7.62" y="-10.16" rot="R270"/>
 <instance part="C58" gate="G$1" x="86.36" y="-53.34" rot="R180"/>
 <instance part="C59" gate="G$1" x="93.98" y="-53.34" rot="R180"/>
@@ -8920,11 +8828,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <wire x1="71.12" y1="-66.04" x2="71.12" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND5" gate="1" pin="0V"/>
-<pinref part="U$2" gate="G$1" pin="2"/>
-<wire x1="-17.78" y1="81.28" x2="-7.62" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="SH2" gate="G$1" pin="P$2"/>
 <pinref part="GND6" gate="1" pin="0V"/>
 <wire x1="7.62" y1="71.12" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
@@ -8967,11 +8870,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <pinref part="P+4" gate="1" pin="+15V"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="83.82" x2="-15.24" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="P+6" gate="1" pin="+15V"/>
-</segment>
-<segment>
 <pinref part="P+7" gate="1" pin="+15V"/>
 <pinref part="C32" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="-48.26" x2="45.72" y2="-48.26" width="0.1524" layer="91"/>
@@ -8988,11 +8886,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <wire x1="-25.4" y1="22.86" x2="-38.1" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-25.4" y="22.86"/>
 <pinref part="P-4" gate="1" pin="-15V"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="3"/>
-<wire x1="-17.78" y1="78.74" x2="-15.24" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="P-10" gate="1" pin="-15V"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="VI"/>
@@ -9177,7 +9070,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <instance part="+3V1" gate="G$1" x="132.08" y="195.58" smashed="yes" rot="R180">
 <attribute name="VALUE" x="132.08" y="198.12" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GNDI1" gate="G$1" x="139.7" y="142.24"/>
 </instances>
 <busses>
 <bus name="ADC[0..6]">
@@ -9263,9 +9155,13 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <pinref part="ADC1" gate="A" pin="AGND"/>
 <wire x1="144.78" y1="162.56" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="165.1" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="162.56" x2="137.16" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="162.56" x2="137.16" y2="160.02" width="0.1524" layer="91"/>
 <junction x="137.16" y="165.1"/>
 <junction x="137.16" y="162.56"/>
+<pinref part="ADC1" gate="A" pin="DGND"/>
+<wire x1="137.16" y1="160.02" x2="137.16" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="160.02" x2="144.78" y2="160.02" width="0.1524" layer="91"/>
+<junction x="137.16" y="160.02"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="GND"/>
@@ -9561,14 +9457,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <pinref part="VDD1" gate="G$1" pin="VDD"/>
 </segment>
 </net>
-<net name="GNDI" class="0">
-<segment>
-<pinref part="ADC1" gate="A" pin="DGND"/>
-<wire x1="144.78" y1="160.02" x2="139.7" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="160.02" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="GNDI1" gate="G$1" pin="GNDI"/>
-</segment>
-</net>
 <net name="VREF1A" class="0">
 <segment>
 <pinref part="ADC1" gate="A" pin="REFA"/>
@@ -9852,13 +9740,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <approved hash="204,4,137.16,40.64,U2,EP,,,,"/>
 <approved hash="104,2,27.94,0,IC6,GND,0V,,,"/>
 <approved hash="104,2,27.94,-22.86,IC7,GND,0V,,,"/>
-<approved hash="104,3,279.4,185.42,ADCOP3,V+,+5V,,,"/>
-<approved hash="104,3,279.4,162.56,ADCOP3,V-,-5V,,,"/>
-<approved hash="104,3,365.76,193.04,ADC2,VDR,+3V3,,,"/>
-<approved hash="104,3,279.4,114.3,ADCOP4,V+,+5V,,,"/>
-<approved hash="104,3,279.4,91.44,ADCOP4,V-,-5V,,,"/>
-<approved hash="104,3,203.2,76.2,U4,+VS,+5V,,,"/>
-<approved hash="104,3,203.2,55.88,U4,-VS,-5V,,,"/>
 </errors>
 </schematic>
 </drawing>
