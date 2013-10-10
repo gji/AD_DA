@@ -4144,8 +4144,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="84.1375" y1="23.1775" x2="84.1248" y2="33.6677" width="0.2032" layer="1"/>
 <wire x1="84.1248" y1="33.6677" x2="77.47" y2="40.3225" width="0.2032" layer="1"/>
 <wire x1="77.47" y1="40.3225" x2="43.4975" y2="40.3225" width="0.2032" layer="1"/>
-<wire x1="43.4975" y1="40.3225" x2="41.275" y2="37.7825" width="0.2032" layer="1"/>
-<wire x1="41.275" y1="37.7825" x2="41.275" y2="36.3" width="0.2032" layer="1"/>
+<wire x1="43.4975" y1="40.3225" x2="41.275" y2="38.1" width="0.2032" layer="1"/>
+<wire x1="41.275" y1="38.1" x2="41.275" y2="36.3" width="0.2032" layer="1"/>
 <wire x1="41.275" y1="36.3" x2="41.2825" y2="36.2925" width="0.2032" layer="1"/>
 </signal>
 <signal name="DACD2">

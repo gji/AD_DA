@@ -3809,7 +3809,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="86.0806" y1="13.6906" x2="86.0806" y2="12.7" width="0.3048" layer="1"/>
 <wire x1="85.4202" y1="13.6906" x2="85.4202" y2="12.7" width="0.3048" layer="1"/>
 <wire x1="84.7852" y1="13.6906" x2="84.7852" y2="12.7" width="0.3048" layer="1"/>
-<wire x1="73.9775" y1="12.1675" x2="73.9775" y2="12.485" width="0" layer="19" extent="1-1"/>
+<contactref element="U$2" pad="E1"/>
+<wire x1="97.79" y1="76.5175" x2="98.425" y2="77.1525" width="0" layer="19" extent="1-1"/>
+<wire x1="73.9775" y1="12.485" x2="73.9775" y2="12.1675" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U1" pad="8"/>
@@ -4474,9 +4476,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="R19" pad="2"/>
 <wire x1="98.425" y1="79.6925" x2="100.115" y2="79.6925" width="0.4064" layer="1"/>
 <wire x1="100.115" y1="79.6925" x2="100.33" y2="79.4775" width="0.4064" layer="1"/>
-</signal>
-<signal name="N$33">
-<contactref element="U$2" pad="E1"/>
 </signal>
 <signal name="N$37">
 <contactref element="U$2" pad="A4"/>

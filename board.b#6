@@ -4137,14 +4137,14 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="83.4898" y1="13.6906" x2="83.5025" y2="14.0462" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="DACD1">
-<contactref element="J1" pad="222"/>
 <contactref element="U2" pad="8"/>
-<wire x1="42.8825" y1="36.2925" x2="83.4898" y2="19.3294" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="218"/>
+<wire x1="41.2825" y1="36.2925" x2="83.4898" y2="19.3294" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DACD2">
-<contactref element="J1" pad="218"/>
 <contactref element="U2" pad="10"/>
-<wire x1="41.2825" y1="36.2925" x2="82.169" y2="19.3294" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="222"/>
+<wire x1="42.8825" y1="36.2925" x2="82.169" y2="19.3294" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DACD3">
 <contactref element="J1" pad="220"/>
@@ -4189,9 +4189,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="59.6825" y1="33.98" x2="59.6825" y2="36.2925" width="0.254" layer="1"/>
 </signal>
 <signal name="DACD4">
-<contactref element="J1" pad="216"/>
 <contactref element="U2" pad="11"/>
-<wire x1="40.4825" y1="36.2925" x2="81.534" y2="19.3294" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="224"/>
+<wire x1="43.6825" y1="36.2925" x2="81.534" y2="19.3294" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R2" pad="1"/>
@@ -4588,9 +4588,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="86.36" y1="79.6925" x2="93.345" y2="79.6925" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DACD0">
-<contactref element="J1" pad="224"/>
 <contactref element="U2" pad="7"/>
-<wire x1="43.6825" y1="36.2925" x2="84.1248" y2="19.3294" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="216"/>
+<wire x1="40.4825" y1="36.2925" x2="84.1248" y2="19.3294" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$26">
 <wire x1="63.1825" y1="27.305" x2="49.2125" y2="27.305" width="0.254" layer="2"/>

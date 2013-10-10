@@ -4176,21 +4176,29 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="ADC1" pad="10"/>
 <wire x1="65.7606" y1="30.1244" x2="65.7606" y2="31.7881" width="0.254" layer="1"/>
 <wire x1="65.7606" y1="31.7881" x2="66.1875" y2="32.215" width="0.254" layer="1"/>
+<contactref element="J1" pad="270"/>
+<wire x1="66.1875" y1="32.215" x2="62.0825" y2="36.2925" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC1">
 <contactref element="ADC1" pad="13"/>
 <wire x1="63.8048" y1="30.1244" x2="63.8048" y2="31.1023" width="0.254" layer="1"/>
 <wire x1="63.8048" y1="31.1023" x2="65.4" y2="32.6975" width="0.254" layer="1"/>
+<contactref element="J1" pad="268"/>
+<wire x1="65.4" y1="32.6975" x2="61.2825" y2="36.2925" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC2">
 <contactref element="ADC1" pad="14"/>
 <wire x1="63.1698" y1="30.1244" x2="63.1698" y2="31.7373" width="0.254" layer="1"/>
 <wire x1="63.1698" y1="31.7373" x2="65.2475" y2="33.815" width="0.254" layer="1"/>
+<contactref element="J1" pad="266"/>
+<wire x1="63.1698" y1="31.7373" x2="60.4825" y2="36.2925" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC3">
 <contactref element="ADC1" pad="15"/>
 <wire x1="62.5094" y1="30.1244" x2="62.5094" y2="32.3469" width="0.254" layer="1"/>
 <wire x1="62.5094" y1="32.3469" x2="65.095" y2="34.9325" width="0.254" layer="1"/>
+<contactref element="J1" pad="264"/>
+<wire x1="62.5094" y1="32.3469" x2="59.6825" y2="36.2925" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DACD4">
 <contactref element="J1" pad="216"/>
@@ -4622,6 +4630,15 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="84.61375" y1="20.47875" x2="84.61375" y2="22.70125" width="0.254" layer="2"/>
 <wire x1="84.61375" y1="22.70125" x2="85.09" y2="23.1775" width="0.254" layer="2"/>
 <wire x1="85.09" y1="23.1775" x2="93.6625" y2="23.1775" width="0.254" layer="2"/>
+</signal>
+<signal name="ADC4">
+<contactref element="J1" pad="272"/>
+</signal>
+<signal name="ADC5">
+<contactref element="J1" pad="274"/>
+</signal>
+<signal name="ADC6">
+<contactref element="J1" pad="276"/>
 </signal>
 </signals>
 </board>
