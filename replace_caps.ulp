@@ -1,0 +1,23 @@
+// Make sure we're in a schematic
+if (schematic) schematic(S) {
+
+	// Output to a file in the project directory
+	output("test.scr", "wt") {
+
+	// Spin through the parts on a schematic
+	S.parts(P) {
+		// For each part...
+
+		// ... that has a package
+			if (P.device.package) {
+
+				// ... and the name of the package is "R0805"
+				if (strstr(P.device.package.name, "C0603") >= 0 && strstr(P.value, "10uF") >= 0 ) {
+
+				// print a change package command for the part's name
+				printf("replace %s CPOL-US;\n", P.name);
+				}
+			}
+		}
+	}
+}
