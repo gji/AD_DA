@@ -4202,31 +4202,55 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <signal name="ADC0">
 <contactref element="ADC1" pad="10"/>
 <contactref element="J1" pad="270"/>
+<<<<<<< HEAD
 <wire x1="65.7606" y1="30.1244" x2="65.7606" y2="31.7119" width="0.1524" layer="1"/>
 <wire x1="65.7606" y1="31.7119" x2="62.0825" y2="35.39" width="0.1524" layer="1"/>
 <wire x1="62.0825" y1="35.39" x2="62.0825" y2="36.2925" width="0.1524" layer="1"/>
+=======
+<wire x1="65.7606" y1="30.1244" x2="65.7606" y2="31.7119" width="0.254" layer="1"/>
+<wire x1="65.7606" y1="31.7119" x2="62.0825" y2="35.39" width="0.254" layer="1"/>
+<wire x1="62.0825" y1="35.39" x2="62.0825" y2="36.2925" width="0.254" layer="1"/>
+>>>>>>> 385088650274b9549ecbfd8efe35e717130a26cf
 </signal>
 <signal name="ADC1">
 <contactref element="ADC1" pad="13"/>
 <contactref element="J1" pad="268"/>
+<<<<<<< HEAD
 <wire x1="63.8048" y1="30.1244" x2="63.8048" y2="32.3977" width="0.1524" layer="1"/>
 <wire x1="63.8048" y1="32.3977" x2="61.2825" y2="34.92" width="0.1524" layer="1"/>
 <wire x1="61.2825" y1="34.92" x2="61.2825" y2="36.2925" width="0.1524" layer="1"/>
+=======
+<wire x1="63.8048" y1="30.1244" x2="63.8048" y2="32.3977" width="0.254" layer="1"/>
+<wire x1="63.8048" y1="32.3977" x2="61.2825" y2="34.92" width="0.254" layer="1"/>
+<wire x1="61.2825" y1="34.92" x2="61.2825" y2="36.2925" width="0.254" layer="1"/>
+>>>>>>> 385088650274b9549ecbfd8efe35e717130a26cf
 </signal>
 <signal name="ADC2">
 <contactref element="ADC1" pad="14"/>
 <contactref element="J1" pad="266"/>
 <wire x1="63.1698" y1="30.1244" x2="63.1825" y2="30.1371" width="0.254" layer="1"/>
+<<<<<<< HEAD
 <wire x1="63.1825" y1="30.1371" x2="63.1825" y2="31.75" width="0.1524" layer="1"/>
 <wire x1="63.1825" y1="31.75" x2="60.4825" y2="34.45" width="0.1524" layer="1"/>
 <wire x1="60.4825" y1="34.45" x2="60.4825" y2="36.2925" width="0.1524" layer="1"/>
+=======
+<wire x1="63.1825" y1="30.1371" x2="63.1825" y2="31.75" width="0.254" layer="1"/>
+<wire x1="63.1825" y1="31.75" x2="60.4825" y2="34.45" width="0.254" layer="1"/>
+<wire x1="60.4825" y1="34.45" x2="60.4825" y2="36.2925" width="0.254" layer="1"/>
+>>>>>>> 385088650274b9549ecbfd8efe35e717130a26cf
 </signal>
 <signal name="ADC3">
 <contactref element="ADC1" pad="15"/>
 <contactref element="J1" pad="264"/>
+<<<<<<< HEAD
 <wire x1="62.5094" y1="30.1244" x2="62.5094" y2="31.1531" width="0.1524" layer="1"/>
 <wire x1="62.5094" y1="31.1531" x2="59.6825" y2="33.98" width="0.1524" layer="1"/>
 <wire x1="59.6825" y1="33.98" x2="59.6825" y2="36.2925" width="0.1524" layer="1"/>
+=======
+<wire x1="62.5094" y1="30.1244" x2="62.5094" y2="31.1531" width="0.254" layer="1"/>
+<wire x1="62.5094" y1="31.1531" x2="59.6825" y2="33.98" width="0.254" layer="1"/>
+<wire x1="59.6825" y1="33.98" x2="59.6825" y2="36.2925" width="0.254" layer="1"/>
+>>>>>>> 385088650274b9549ecbfd8efe35e717130a26cf
 </signal>
 <signal name="DACD4">
 <contactref element="U2" pad="11"/>
@@ -4364,16 +4388,28 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <signal name="N$24">
 <contactref element="R15" pad="1"/>
 <contactref element="X2" pad="1"/>
+<<<<<<< HEAD
 <wire x1="70.27" y1="9.8425" x2="70.27" y2="9.105" width="0.254" layer="1"/>
 <wire x1="70.27" y1="9.105" x2="71.12" y2="8.255" width="0.254" layer="1"/>
 <wire x1="71.12" y1="8.255" x2="71.12" y2="5.3975" width="0.254" layer="1"/>
+=======
+<wire x1="70.27" y1="9.2075" x2="70.27" y2="7.835" width="0.254" layer="1"/>
+<wire x1="70.27" y1="7.835" x2="71.12" y2="6.985" width="0.254" layer="1"/>
+<wire x1="71.12" y1="6.985" x2="71.12" y2="4.445" width="0.254" layer="1"/>
+>>>>>>> 385088650274b9549ecbfd8efe35e717130a26cf
 </signal>
 <signal name="N$25">
 <contactref element="R6" pad="1"/>
 <contactref element="X1" pad="1"/>
+<<<<<<< HEAD
 <wire x1="55.665" y1="9.525" x2="55.665" y2="8.7875" width="0.254" layer="1"/>
 <wire x1="55.665" y1="8.7875" x2="56.515" y2="7.9375" width="0.254" layer="1"/>
 <wire x1="56.515" y1="7.9375" x2="56.515" y2="5.3975" width="0.254" layer="1"/>
+=======
+<wire x1="55.665" y1="8.89" x2="55.665" y2="7.835" width="0.254" layer="1"/>
+<wire x1="55.665" y1="7.835" x2="56.515" y2="6.985" width="0.254" layer="1"/>
+<wire x1="56.515" y1="6.985" x2="56.515" y2="4.445" width="0.254" layer="1"/>
+>>>>>>> 385088650274b9549ecbfd8efe35e717130a26cf
 </signal>
 <signal name="N$7">
 <contactref element="U1" pad="6"/>

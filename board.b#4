@@ -4188,6 +4188,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <signal name="DACD1">
 <contactref element="U2" pad="8"/>
 <contactref element="J1" pad="218"/>
+<<<<<<< HEAD
 <wire x1="81.5848" y1="19.3294" x2="81.5848" y2="21.9202" width="0.1524" layer="1"/>
 <wire x1="81.5848" y1="21.9202" x2="79.0575" y2="24.4475" width="0.1524" layer="1"/>
 <wire x1="79.0575" y1="24.4475" x2="76.2" y2="24.4475" width="0.1524" layer="1"/>
@@ -4198,6 +4199,16 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="41.275" y1="38.735" x2="41.275" y2="36.3" width="0.1524" layer="1"/>
 <wire x1="41.275" y1="36.3" x2="41.2825" y2="36.2925" width="0.1524" layer="1"/>
 <wire x1="75.565" y1="35.56" x2="75.565" y2="25.0825" width="0.1524" layer="1"/>
+=======
+<wire x1="83.4898" y1="19.3294" x2="83.4898" y2="22.5298" width="0.2032" layer="1"/>
+<wire x1="83.4898" y1="22.5298" x2="84.1375" y2="23.1775" width="0.2032" layer="1"/>
+<wire x1="84.1375" y1="23.1775" x2="84.1248" y2="33.6677" width="0.2032" layer="1"/>
+<wire x1="84.1248" y1="33.6677" x2="77.47" y2="40.3225" width="0.2032" layer="1"/>
+<wire x1="77.47" y1="40.3225" x2="43.4975" y2="40.3225" width="0.2032" layer="1"/>
+<wire x1="43.4975" y1="40.3225" x2="41.275" y2="38.1" width="0.2032" layer="1"/>
+<wire x1="41.275" y1="38.1" x2="41.275" y2="36.3" width="0.2032" layer="1"/>
+<wire x1="41.275" y1="36.3" x2="41.2825" y2="36.2925" width="0.2032" layer="1"/>
+>>>>>>> 385088650274b9549ecbfd8efe35e717130a26cf
 </signal>
 <signal name="DACD2">
 <contactref element="U2" pad="10"/>
