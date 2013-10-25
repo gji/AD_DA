@@ -9,7 +9,7 @@
 <grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.00625" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="$GND" color="8" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="$GND" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="16" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -70,13 +70,13 @@
 </layers>
 <board>
 <plain>
-<wire x1="126.6825" y1="85.725" x2="0" y2="85.725" width="0" layer="20"/>
+<wire x1="149.86" y1="85.725" x2="0" y2="85.725" width="0" layer="20"/>
 <wire x1="0" y1="85.725" x2="0" y2="0" width="0" layer="20"/>
 <text x="73.025" y="76.5175" size="1.27" layer="48" rot="R270" align="bottom-right">High Speed AD/DA Board V2</text>
 <text x="71.755" y="76.5175" size="0.8128" layer="48" rot="R270" align="bottom-right">Geoffrey Ji</text>
 <text x="70.485" y="76.835" size="0.8128" layer="48" rot="R270" align="bottom-right">03/27/13</text>
-<wire x1="126.6825" y1="85.725" x2="126.6825" y2="0" width="0" layer="20"/>
-<wire x1="126.6825" y1="0" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="149.86" y1="85.725" x2="149.86" y2="0" width="0" layer="20"/>
+<wire x1="149.86" y1="0" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="rcl">
@@ -3940,8 +3940,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <polygon width="0.254" layer="2">
 <vertex x="0.635" y="85.09"/>
 <vertex x="0.635" y="0.635"/>
-<vertex x="126.0475" y="0.635"/>
-<vertex x="126.0475" y="85.09"/>
+<vertex x="149.225" y="0.9525"/>
+<vertex x="149.225" y="85.09"/>
 </polygon>
 <contactref element="U5" pad="3"/>
 <contactref element="U5" pad="7"/>
@@ -6246,7 +6246,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <signal name="S$1">
 <wire x1="107.47375" y1="20.32" x2="107.47375" y2="22.70125" width="0.1524" layer="2"/>
 <wire x1="107.47375" y1="22.70125" x2="107.95" y2="23.1775" width="0.1524" layer="2"/>
-<wire x1="107.95" y1="23.1775" x2="126.0475" y2="23.1775" width="0.1524" layer="2"/>
+<wire x1="107.95" y1="23.1775" x2="130.175" y2="23.1775" width="0.1524" layer="2"/>
 </signal>
 <signal name="S$2">
 <wire x1="36.5125" y1="27.305" x2="17.4625" y2="27.305" width="0.1524" layer="2"/>
