@@ -1,0 +1,37 @@
+// Make sure we're in a schematic
+if (library) library(L) {
+
+	// Output to a file in the project directory
+	output("pinswap.scr", "wt") {
+
+	// Spin through the parts on a schematic
+	L.symbols(S) {
+			if (S.name == "XEM6310") {
+
+				S.pins(P) {
+					int pos = strtol(strsub(P.name, 2));
+					if (pos < 100) {
+						real x = (pos%2)*(-1) - 1;
+						real y = -(((pos - (pos-1)%2)-1.0)/2.0)*0.2+4;
+						printf("move %s (%f %f);\n", P.name, x, y);
+						if (pos%2) {
+							printf("ROTATE =MR180 %s;\n", P.name);
+						} else {
+							printf("ROTATE =MR0 %s;\n", P.name);
+						}
+					} else {
+						pos -= 100;
+						real x = -(pos%2)*(1) + 2;
+						real y = -(((pos - (pos-1)%2)-1.0)/2.0)*0.2+4;
+						printf("move %s (%f %f);\n", P.name, x, y);
+						if (pos%2) {
+							printf("ROTATE =MR180 %s;\n", P.name);
+						} else {
+							printf("ROTATE =MR0 %s;\n", P.name);
+						}
+					}
+				}
+			}
+		}
+	}
+}
