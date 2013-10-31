@@ -57,8 +57,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="13" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -67,6 +71,51 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -16685,7 +16734,6 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <part name="C28" library="rcl" deviceset="C-US" device="C0603" value="4.7uF"/>
 <part name="GND5" library="supply2" deviceset="GND" device=""/>
 <part name="C29" library="rcl" deviceset="CPOL-US" device="" value="10uF &lt;3Ohm ESR"/>
-<part name="C30" library="rcl" deviceset="C-US" device="C0603" value="0.1uF Tant"/>
 <part name="U4" library="LTC_By_element14_Batch_1" deviceset="LT1175CS8-5PBF" device=""/>
 <part name="U5" library="LTC_By_element14_Batch_1" deviceset="LT1763CS8-5PBF" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
@@ -16724,8 +16772,8 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="P-7" library="supply1" deviceset="-5V" device=""/>
 <part name="GND16" library="supply2" deviceset="GND" device=""/>
-<part name="C35" library="rcl" deviceset="CPOL-US" device="UD-4X5,8"/>
-<part name="C36" library="rcl" deviceset="CPOL-US" device="UD-4X5,8"/>
+<part name="C35" library="rcl" deviceset="CPOL-US" device="UD-4X5,8" value="100uF"/>
+<part name="C36" library="rcl" deviceset="CPOL-US" device="UD-4X5,8" value="100uF"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="U6" library="ADI-Phase-2" deviceset="AD5754BREZ" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
@@ -16901,6 +16949,13 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <part name="GND30" library="supply2" deviceset="GND" device=""/>
 <part name="GND31" library="supply2" deviceset="GND" device=""/>
 <part name="GND32" library="supply2" deviceset="GND" device=""/>
+<part name="C98" library="rcl" deviceset="CPOL-US" device="" value="1uF Tant"/>
+<part name="C30" library="rcl" deviceset="C-US" device="C0603" value="4.7uF"/>
+<part name="C99" library="rcl" deviceset="C-US" device="C0603" value="4.7uF"/>
+<part name="C100" library="rcl" deviceset="C-US" device="C0603" value="4.7uF"/>
+<part name="GND33" library="supply2" deviceset="GND" device=""/>
+<part name="GND34" library="supply2" deviceset="GND" device=""/>
+<part name="GND35" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16917,24 +16972,24 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <instance part="GND24" gate="GND" x="66.04" y="-101.6" rot="R90"/>
 <instance part="GND25" gate="GND" x="66.04" y="-106.68" rot="R90"/>
 <instance part="GND26" gate="GND" x="35.56" y="60.96" rot="R270"/>
-<instance part="GND27" gate="GND" x="142.24" y="91.44" rot="R90"/>
-<instance part="GND28" gate="GND" x="142.24" y="60.96" rot="R90"/>
-<instance part="GND29" gate="GND" x="111.76" y="5.08" rot="R270"/>
-<instance part="GND30" gate="GND" x="111.76" y="-45.72" rot="R270"/>
-<instance part="GND31" gate="GND" x="142.24" y="-106.68" rot="R90"/>
-<instance part="GND32" gate="GND" x="142.24" y="-101.6" rot="R90"/>
+<instance part="GND27" gate="GND" x="139.7" y="88.9"/>
+<instance part="GND28" gate="GND" x="139.7" y="58.42"/>
+<instance part="GND29" gate="GND" x="114.3" y="2.54"/>
+<instance part="GND30" gate="GND" x="114.3" y="-48.26"/>
+<instance part="GND31" gate="GND" x="139.7" y="-109.22"/>
+<instance part="GND32" gate="GND" x="139.7" y="-104.14"/>
 </instances>
 <busses>
 <bus name="DACD[0..4]">
 <segment>
-<wire x1="78.74" y1="-76.2" x2="78.74" y2="-96.52" width="0.762" layer="92"/>
-<label x="78.74" y="-96.52" size="1.778" layer="95" rot="MR90"/>
+<wire x1="66.04" y1="-76.2" x2="66.04" y2="-96.52" width="0.762" layer="92"/>
+<label x="66.04" y="-96.52" size="1.778" layer="95" rot="MR90"/>
 </segment>
 </bus>
 <bus name="ADC[0..3]">
 <segment>
-<wire x1="78.74" y1="-71.12" x2="78.74" y2="-55.88" width="0.762" layer="92"/>
-<label x="78.74" y="-55.88" size="1.778" layer="95" rot="R270"/>
+<wire x1="66.04" y1="-71.12" x2="66.04" y2="-55.88" width="0.762" layer="92"/>
+<label x="66.04" y="-55.88" size="1.778" layer="95" rot="R270"/>
 </segment>
 </bus>
 <bus name="ADC[7..10]">
@@ -16956,49 +17011,49 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <nets>
 <net name="DACD2" class="0">
 <segment>
-<wire x1="78.74" y1="-86.36" x2="63.5" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-86.36" x2="63.5" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="P$72"/>
 </segment>
 </net>
 <net name="DACD4" class="0">
 <segment>
-<wire x1="63.5" y1="-96.52" x2="78.74" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-96.52" x2="66.04" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="P$76"/>
 </segment>
 </net>
 <net name="ADC3" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="P$60"/>
-<wire x1="78.74" y1="-55.88" x2="63.5" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-55.88" x2="63.5" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC2" class="0">
 <segment>
-<wire x1="78.74" y1="-60.96" x2="63.5" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-60.96" x2="63.5" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="P$62"/>
 </segment>
 </net>
 <net name="ADC1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="P$64"/>
-<wire x1="63.5" y1="-66.04" x2="78.74" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-66.04" x2="66.04" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC0" class="0">
 <segment>
-<wire x1="78.74" y1="-71.12" x2="63.5" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-71.12" x2="63.5" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="P$66"/>
 </segment>
 </net>
 <net name="DACD1" class="0">
 <segment>
-<wire x1="78.74" y1="-81.28" x2="63.5" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-81.28" x2="63.5" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="P$70"/>
 </segment>
 </net>
 <net name="DACD0" class="0">
 <segment>
-<wire x1="78.74" y1="-76.2" x2="63.5" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-76.2" x2="63.5" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="P$68"/>
 </segment>
 </net>
@@ -17016,6 +17071,12 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <wire x1="96.52" y1="86.36" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
 <junction x="96.52" y="86.36"/>
+<wire x1="114.3" y1="91.44" x2="106.68" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
+<junction x="114.3" y="91.44"/>
+<junction x="114.3" y="86.36"/>
+<junction x="114.3" y="81.28"/>
 </segment>
 </net>
 <net name="ADC14" class="0">
@@ -17080,7 +17141,7 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 </net>
 <net name="DACD3" class="0">
 <segment>
-<wire x1="78.74" y1="-91.44" x2="63.5" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-91.44" x2="63.5" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="P$74"/>
 </segment>
 </net>
@@ -17151,6 +17212,10 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <pinref part="J1" gate="G$1" pin="P$178"/>
 <pinref part="GND32" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND20" gate="GND" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="P$1"/>
+</segment>
 </net>
 </nets>
 </sheet>
@@ -17159,8 +17224,8 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="VDD4" gate="G$1" x="408.94" y="71.12" smashed="yes" rot="R270">
-<attribute name="VALUE" x="408.94" y="71.12" size="1.778" layer="96"/>
+<instance part="VDD4" gate="G$1" x="421.64" y="71.12" smashed="yes" rot="R270">
+<attribute name="VALUE" x="421.64" y="71.12" size="1.778" layer="96"/>
 </instance>
 <instance part="U$1" gate="G$1" x="208.28" y="83.82"/>
 <instance part="U$2" gate="G$1" x="208.28" y="33.02"/>
@@ -17179,7 +17244,6 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <instance part="C28" gate="G$1" x="167.64" y="40.64"/>
 <instance part="GND5" gate="GND" x="167.64" y="30.48"/>
 <instance part="C29" gate="G$1" x="317.5" y="88.9"/>
-<instance part="C30" gate="G$1" x="309.88" y="35.56" rot="R180"/>
 <instance part="U4" gate="A" x="281.94" y="35.56"/>
 <instance part="U5" gate="A" x="294.64" y="86.36"/>
 <instance part="P+7" gate="1" x="332.74" y="91.44" rot="R180"/>
@@ -17207,9 +17271,16 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <instance part="GND16" gate="GND" x="342.9" y="55.88" rot="R90"/>
 <instance part="C35" gate="G$1" x="180.34" y="91.44"/>
 <instance part="C36" gate="G$1" x="177.8" y="40.64"/>
-<instance part="+3V2" gate="G$1" x="408.94" y="66.04" smashed="yes" rot="R270">
-<attribute name="VALUE" x="408.94" y="66.04" size="1.778" layer="96"/>
+<instance part="+3V2" gate="G$1" x="411.48" y="66.04" smashed="yes" rot="R270">
+<attribute name="VALUE" x="411.48" y="66.04" size="1.778" layer="96"/>
 </instance>
+<instance part="C98" gate="G$1" x="309.88" y="35.56" rot="R180"/>
+<instance part="C30" gate="G$1" x="345.44" y="73.66"/>
+<instance part="C99" gate="G$1" x="403.86" y="66.04"/>
+<instance part="C100" gate="G$1" x="414.02" y="68.58"/>
+<instance part="GND33" gate="GND" x="403.86" y="58.42"/>
+<instance part="GND34" gate="GND" x="414.02" y="60.96"/>
+<instance part="GND35" gate="GND" x="345.44" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -17249,9 +17320,9 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <junction x="322.58" y="88.9"/>
 </segment>
 <segment>
-<pinref part="C30" gate="G$1" pin="1"/>
 <wire x1="309.88" y1="30.48" x2="309.88" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="GND" pin="GND"/>
+<pinref part="C98" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="2@1"/>
@@ -17355,6 +17426,18 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <pinref part="U$8" gate="G$1" pin="2"/>
 <pinref part="GND16" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C99" gate="G$1" pin="2"/>
+<pinref part="GND33" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C100" gate="G$1" pin="2"/>
+<pinref part="GND34" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C30" gate="G$1" pin="2"/>
+<pinref part="GND35" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="-5V" class="0">
 <segment>
@@ -17375,8 +17458,9 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <pinref part="U$3" gate="G$1" pin="VIN"/>
 <wire x1="330.2" y1="93.98" x2="327.66" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="93.98" x2="330.2" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="76.2" x2="355.6" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="76.2" x2="345.44" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="EN1"/>
+<wire x1="345.44" y1="76.2" x2="355.6" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="76.2" x2="358.14" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="71.12" x2="355.6" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="71.12" x2="355.6" y2="76.2" width="0.1524" layer="91"/>
@@ -17386,6 +17470,8 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <junction x="355.6" y="71.12"/>
 <junction x="355.6" y="76.2"/>
 <junction x="330.2" y="93.98"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<junction x="345.44" y="76.2"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="1"/>
@@ -17460,17 +17546,17 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <segment>
 <pinref part="U4" gate="A" pin="VIN_2"/>
 <pinref part="U4" gate="A" pin="VIN"/>
-<wire x1="259.08" y1="48.26" x2="261.62" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="43.18" x2="264.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="48.26" x2="261.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="48.26" x2="264.16" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="48.26" x2="259.08" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="40.64" x2="264.16" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U4" gate="A" pin="ILIM2"/>
-<wire x1="261.62" y1="43.18" x2="261.62" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="48.26" x2="261.62" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="27.94" x2="264.16" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U4" gate="A" pin="ILIM4"/>
 <wire x1="261.62" y1="27.94" x2="261.62" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="25.4" x2="264.16" y2="25.4" width="0.1524" layer="91"/>
-<junction x="261.62" y="43.18"/>
+<junction x="261.62" y="48.26"/>
 <junction x="261.62" y="27.94"/>
 <pinref part="U$5" gate="G$1" pin="3"/>
 <junction x="259.08" y="48.26"/>
@@ -17498,12 +17584,12 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <wire x1="304.8" y1="7.62" x2="304.8" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U4" gate="A" pin="OUTPUT"/>
 <wire x1="304.8" y1="43.18" x2="299.72" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="2"/>
 <wire x1="304.8" y1="43.18" x2="309.88" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="43.18" x2="309.88" y2="40.64" width="0.1524" layer="91"/>
 <junction x="304.8" y="43.18"/>
 <pinref part="U$6" gate="G$1" pin="1"/>
 <junction x="309.88" y="43.18"/>
+<pinref part="C98" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="N$67" class="0">
@@ -17528,26 +17614,32 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="VOUT1"/>
-<wire x1="406.4" y1="66.04" x2="406.4" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="68.58" x2="396.24" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="408.94" y1="66.04" x2="408.94" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="408.94" y1="68.58" x2="403.86" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="SENSE1"/>
+<wire x1="403.86" y1="68.58" x2="396.24" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="396.24" y1="68.58" x2="393.7" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="396.24" y1="68.58" x2="396.24" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="396.24" y1="58.42" x2="393.7" y2="58.42" width="0.1524" layer="91"/>
 <junction x="396.24" y="68.58"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<pinref part="C99" gate="G$1" pin="1"/>
+<junction x="403.86" y="68.58"/>
 </segment>
 </net>
 <net name="VDD" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="VOUT2"/>
 <pinref part="VDD4" gate="G$1" pin="VDD"/>
-<wire x1="406.4" y1="71.12" x2="398.78" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="71.12" x2="414.02" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="SENSE2"/>
+<wire x1="414.02" y1="71.12" x2="398.78" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="398.78" y1="71.12" x2="393.7" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="398.78" y1="71.12" x2="398.78" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="398.78" y1="60.96" x2="393.7" y2="60.96" width="0.1524" layer="91"/>
 <junction x="398.78" y="71.12"/>
+<pinref part="C100" gate="G$1" pin="1"/>
+<junction x="414.02" y="71.12"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -19939,7 +20031,31 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <approved hash="104,3,58.42,96.52,ADCOP2,V-,-5V,,,"/>
 <approved hash="104,3,-17.78,81.28,U1,+VS,+5V,,,"/>
 <approved hash="104,3,-17.78,60.96,U1,-VS,-5V,,,"/>
+<approved hash="104,4,119.38,45.72,U2,AVDD,+5V,,,"/>
+<approved hash="104,4,119.38,40.64,U2,DVCC,+3V3,,,"/>
+<approved hash="104,4,165.1,27.94,U2,EP,N$95,,,"/>
+<approved hash="104,4,58.42,58.42,U3,VIN,+5V,,,"/>
 <approved hash="202,2,264.16,33.02,U4,~SHDN,,,,"/>
+<approved hash="104,4,119.38,-43.18,U6,AVDD,+5V,,,"/>
+<approved hash="104,4,119.38,-48.26,U6,DVCC,+3V3,,,"/>
+<approved hash="104,4,165.1,-60.96,U6,EP,N$94,,,"/>
+<approved hash="104,4,58.42,-30.48,U7,VIN,+5V,,,"/>
+<approved hash="104,3,58.42,17.78,ADCOP3,V+,+5V,,,"/>
+<approved hash="104,3,58.42,-5.08,ADCOP3,V-,-5V,,,"/>
+<approved hash="104,3,144.78,25.4,ADC2,VDR,+3V3,,,"/>
+<approved hash="104,3,58.42,-53.34,ADCOP4,V+,+5V,,,"/>
+<approved hash="104,3,58.42,-76.2,ADCOP4,V-,-5V,,,"/>
+<approved hash="104,3,-17.78,-91.44,U8,+VS,+5V,,,"/>
+<approved hash="104,3,-17.78,-111.76,U8,-VS,-5V,,,"/>
+<approved hash="104,3,58.42,-157.48,ADCOP5,V+,+5V,,,"/>
+<approved hash="104,3,58.42,-180.34,ADCOP5,V-,-5V,,,"/>
+<approved hash="104,3,144.78,-149.86,ADC3,VDR,+3V3,,,"/>
+<approved hash="104,3,58.42,-228.6,ADCOP6,V+,+5V,,,"/>
+<approved hash="104,3,58.42,-251.46,ADCOP6,V-,-5V,,,"/>
+<approved hash="104,3,-17.78,-266.7,U9,+VS,+5V,,,"/>
+<approved hash="104,3,-17.78,-287.02,U9,-VS,-5V,,,"/>
+<approved hash="106,4,165.1,-60.96,N$94,,,,,"/>
+<approved hash="106,4,165.1,27.94,N$95,,,,,"/>
 </errors>
 </schematic>
 </drawing>
