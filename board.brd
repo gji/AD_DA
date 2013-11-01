@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.00625" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="$GND" color="8" fill="1" visible="yes" active="yes"/>
@@ -4253,7 +4253,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="X8" pad="5"/>
 <contactref element="X8" pad="3"/>
 <contactref element="X8" pad="2"/>
-<polygon width="0.254" layer="2">
+<polygon width="0.254" layer="2" rank="6">
 <vertex x="0.635" y="85.09"/>
 <vertex x="0.635" y="0.635"/>
 <vertex x="126.365" y="0.635"/>
@@ -6691,6 +6691,10 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="U2" pad="25"/>
 </signal>
 </signals>
+<errors>
+<approved hash="3,2,da0b9b399b24da16"/>
+<approved hash="3,2,50c9627b626850da"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
