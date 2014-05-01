@@ -16772,8 +16772,8 @@ Source: Lighthorse Technologies, inc. SASF54GT.pdf</description>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="P-7" library="supply1" deviceset="-5V" device=""/>
 <part name="GND16" library="supply2" deviceset="GND" device=""/>
-<part name="C35" library="rcl" deviceset="CPOL-US" device="UD-4X5,8" value="100uF"/>
-<part name="C36" library="rcl" deviceset="CPOL-US" device="UD-4X5,8" value="100uF"/>
+<part name="C35" library="rcl" deviceset="CPOL-US" device="UD-4X5,8" value="47uF"/>
+<part name="C36" library="rcl" deviceset="CPOL-US" device="UD-4X5,8" value="47uF"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="U6" library="ADI-Phase-2" deviceset="AD5754BREZ" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>

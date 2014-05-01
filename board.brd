@@ -3667,11 +3667,11 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="U$8" library="molex-kk" package="KK-V-3" value="KK3V" x="94.45625" y="43.33875" smashed="yes" rot="R90">
 <attribute name="NAME" x="95.40875" y="42.06875" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="C35" library="rcl" package="UD-4X5,8_NICHICON" value="100uF" x="88.265" y="82.2325" smashed="yes" rot="R90">
+<element name="C35" library="rcl" package="UD-4X5,8_NICHICON" value="47uF" x="88.265" y="82.2325" smashed="yes" rot="R90">
 <attribute name="NAME" x="85.725" y="80.3275" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="91.44" y="80.3275" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="C36" library="rcl" package="UD-4X5,8_NICHICON" value="100uF" x="97.79" y="82.2325" smashed="yes" rot="R90">
+<element name="C36" library="rcl" package="UD-4X5,8_NICHICON" value="47uF" x="97.79" y="82.2325" smashed="yes" rot="R90">
 <attribute name="NAME" x="95.25" y="80.3275" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="100.965" y="80.3275" size="1.016" layer="27" rot="R90"/>
 </element>
